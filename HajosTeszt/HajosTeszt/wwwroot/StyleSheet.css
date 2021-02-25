@@ -1,0 +1,48 @@
+﻿div {
+    margin: 10px;
+    padding: 20px;
+    border: 3px dotted aqua;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}
+
+    a:hover {
+        /* vegyük észre, hogy örökli a tulajdonságokat a szülőtől, egyet közülük felülírunk*/
+        background-color: goldenrod;
+    }
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: fuchsia;
+    font-size: 40px;
+}
+
+#felsorolasok {
+    background-color: lightgrey;
+}
+
+.pottyos {
+    background-color: white;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.szamos {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}

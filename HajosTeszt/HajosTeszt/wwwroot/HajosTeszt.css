@@ -1,0 +1,59 @@
+﻿html, body {
+    height: 100%;
+}
+
+div {
+    margin: 10px;
+    border: 1px solid aqua
+}
+
+#külső {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+#kérdés_szöveg {
+}
+
+#középső {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#válaszok {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#kép {
+    overflow: hidden;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#vezérlő {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gomb {
+    padding: 20px;
+    width: 80px;
+}
+
+.kerdes {
+}
+
+.kattinthato:hover {
+    background-color: aquamarine;
+    color: beige;
+}
+
+.jo {
+}
+
+.rossz {
+}

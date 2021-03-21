@@ -1,26 +1,27 @@
-﻿window.onload = function () {
-    let hely = document.getElementById("ide");
+﻿window.onload = () => {
 
-    var faktoriálisR = (n) => {
+    console.log("betoltodott");
+    var faktorialis = (n) => {
         if (n === 0 || n === 1) {
             return 1;
-        } else {
-            return n * faktoriálisR(n - 1)
+        }
+        else {
+            returnn * faktorialis(n-1)
         }
     }
 
+    for (var sor = 0; sor < 10; sor++) {
+        var sorok = document.createElement("div");
+        sorok.classList.add("sor");
+        document.getElementById("pascal").appendChild(sorok);
 
-    for (var n = 0; n < 10; n++) {
-        let sor = document.createElement("div");
-        sor.classList.add(sor);
-        hely.appendChild(sor);
-
-        for (var k = 0; k < n; k++) {
-            let szam = document.createElement("div");
-            szam.classList.add("elem");
-            szam.innerText = faktoriálisR();
-            sor.appendChild(szam);
+        for (var oszlop = 0; oszlop <= sor; oszlop++) {
+            var elemek = document.createElement("div");
+            sorok.appendChild(elemek);
+            elemek.classList.add("elem");
+            elemek.innerText = faktorialis(sor) / (faktorialis(oszlop) * faktorialis(sor - oszlop));
+            elemek.style.background = 'rgb(0, 0, ${(255 * 2 / elemek.innerText) + 125})';
         }
     }
+
 }
-

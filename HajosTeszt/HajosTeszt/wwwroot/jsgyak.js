@@ -6,14 +6,14 @@
             return 1;
         }
         else {
-            returnn * faktorialis(n-1)
+            return n * faktorialis(n-1)
         }
     }
 
     for (var sor = 0; sor < 10; sor++) {
         var sorok = document.createElement("div");
         sorok.classList.add("sor");
-        document.getElementById("pascal").appendChild(sorok);
+        document.getElementById("ide").appendChild(sorok);
 
         for (var oszlop = 0; oszlop <= sor; oszlop++) {
             var elemek = document.createElement("div");

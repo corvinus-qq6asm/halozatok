@@ -1,4 +1,8 @@
-﻿fetch('/kerdesek.json')
+﻿window.onload() letöltésBefejeződött();
+
+var kérdések;
+
+fetch('/kerdesek.json')
     .then(response => response.json())
     .then(data => letöltésBefejeződött(data)
     );

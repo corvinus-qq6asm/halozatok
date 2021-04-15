@@ -1,4 +1,4 @@
-﻿window.onload() letöltésBefejeződött();
+﻿window.onload(); letöltésBefejeződött();
 
 var kérdések;
 

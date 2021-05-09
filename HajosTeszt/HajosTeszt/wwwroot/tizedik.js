@@ -40,3 +40,4 @@ function kérdésBetöltés(id) {
         })
         .then(data => kérdésMegjelenítés(data));
 }  
+//
